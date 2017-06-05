@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelog>
+    <release version="1.0-beta_e" versioncode="3">
+        <change>Risolti: problemi di installazione</change>
+    </release>
+
+    <release version="1.0-beta_d" versioncode="2">
+        <change>Aggiunto: supporto al Changelog</change>
+        <change>Risolto: Richiesta di SU</change>
+    </release>
+
+    <release version="1.0-beta_c" versioncode="1">
+        <change>Risolti: problemi donazione PayPal </change>
+        <change>E altri bug</change>
+    </release>
+
+    <release version="1.0-bb" versioncode="0">
+        <change>Primo rilascio</change>
+    </release>
+</changelog>

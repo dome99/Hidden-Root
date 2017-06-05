@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.potenzadomenico.hiddenroot.MainActivity">
+    <!--<item
+        android:id="@+id/action_settings"
+        android:icon="@mipmap/settings_menu_icon"
+        android:orderInCategory="100"
+        android:title="@string/title_activity_settings"
+        app:showAsAction="withText" />-->
+    <item
+        android:id="@+id/action_donate"
+        android:orderInCategory="200"
+        android:icon="@drawable/ic_donate1"
+        android:title="@string/title_activity_donate"
+        app:showAsAction="always" />
+</menu>

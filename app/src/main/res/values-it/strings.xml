@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hidden Root</string>
+    <string name="action_settings">Impostazioni</string>
+    <string name="allOff">Disabilita il ROOT</string>
+    <string name="allOn">Abilita il ROOT</string>
+    <string name="execute_app">Esegui l\'app</string>
+    <string name="load_all">Caricando le tue app…</string>
+    <string name="not_runnable">Non puoi eseguire questa app!</string>
+    <string name="not_selected">Devi selezionare una app prima</string>
+    <string name="select">Seleziona una app da eseguire</string>
+    <string name="title_activity_executing_apps">Esegui l\'app</string>
+    <string name="your_apps">Queste sono le tue app</string>
+    <string name="donate_message">Pagami un caffè! :)</string>
+    <string name="title_activity_donate">Dona</string>
+    <string name="title_activity_settings">Impostazioni</string>
+    <string name="enter_amount_string">Inserisci un importo</string>
+    <string name="message_error_text">Non disponi dei permessi di root</string>
+    <string name="message_error_title">Errore</string>
+    <string name="pay_now_string">Paga Ora</string>
+    <string name="disabled_root">Root disabiltato ;)</string>
+    <string name="enabled_root">Root abilitato ;)</string>
+    <string name="changelog_show_full">di più…</string>
+    <string name="changelog_title">Cosa c\'è di nuovo</string>
+    <string name="null_import">Inserisci prima un importo!</string>
+</resources>

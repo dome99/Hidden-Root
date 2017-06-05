@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Normal state. -->
+    <item android:drawable="@color/listitem_default_color"
+        android:state_activated="false"
+        android:state_selected="false"/>
+    <!-- pressed state. -->
+    <item android:drawable="@color/colorPrimaryDark"
+        android:state_activated="true"/>
+    <!-- Selected state. -->
+    <item android:drawable="@color/colorAccent"
+        android:state_activated="false"
+        android:state_selected="true"/>
+</selector>

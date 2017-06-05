@@ -1,0 +1,50 @@
+{
+  "project_info": {
+    "project_number": "69700455875",
+    "firebase_url": "https://hidden-root.firebaseio.com",
+    "project_id": "hidden-root",
+    "storage_bucket": "hidden-root.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69700455875:android:1496de31cac702da",
+        "android_client_info": {
+          "package_name": "com.potenzadomenico.hiddenroot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "69700455875-ks7198hbooert12so1dp26icf83qvrsq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.potenzadomenico.hiddenroot",
+            "certificate_hash": "5af307de6221737ed63203c73a96fd568a64716f"
+          }
+        },
+        {
+          "client_id": "69700455875-1hm19dmq4imfs52ebe0b6lep7fhj8h9u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBi8WDiOLXGc9kX_xLfuuz7xQt2br7LUw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
