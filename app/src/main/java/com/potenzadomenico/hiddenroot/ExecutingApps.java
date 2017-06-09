@@ -73,18 +73,21 @@ public class ExecutingApps extends AppCompatActivity{
             public void onClick(View view) {
                 if(selected!=null){
                     //chiedo il permesso di root come 'su' e poi cambio il file 'su' in 'si'
-                    SuRequest.CanRunRootCommand("su");
-                    boolean done=SuRequest.suIntoSi();
-                    //chiedo accesso root come 'si'
-                    SuRequest.CanRunRootCommand("si");
+                    boolean su=SuRequest.CanRunRootCommand("su");
+                    boolean done=false;
+                    if(su){
+                        done=SuRequest.suIntoSi();
+                        //chiedo accesso root come 'si'
+                        SuRequest.CanRunRootCommand("si");
+                    }else{
+                        done=SuRequest.CanRunRootCommand("si");
+                    }
                     if(done){
                             try {
                                 //lancio l'app selezionata
                                 Intent intent = packageManager.getLaunchIntentForPackage(
                                                                 selected.getPackageName());
                                 intent.setFlags(0);
-
-                                // ancora da elaborare
 
                                 startActivityForResult(intent, 0);
                                 Toast.makeText(ExecutingApps.this, R.string.disabled_root,

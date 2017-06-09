@@ -99,7 +99,7 @@ public class SuRequest {
             for(int i=0; i<PHONE_DIRECTORIES.size(); i++){
                 DataOutputStream os = new DataOutputStream(suProcess.getOutputStream());
                 DataInputStream osRes = new DataInputStream(suProcess.getInputStream());
-                os.writeBytes("mount -o remount,rw /\n");
+                os.writeBytes("mount -o remount,rw /system\n");
                 os.writeBytes("mv "+PHONE_DIRECTORIES.get(i)+"su "+PHONE_DIRECTORIES.get(i)+"si\n");
                 os.writeBytes("exit\n");
                 os.flush();
@@ -134,7 +134,7 @@ public class SuRequest {
             for(int i=0; i<PHONE_DIRECTORIES.size(); i++) {
                 DataOutputStream os = new DataOutputStream(suProcess.getOutputStream());
                 DataInputStream osRes = new DataInputStream(suProcess.getInputStream());
-                os.writeBytes("mount -o remount,rw /\n");
+                os.writeBytes("mount -o remount,rw /system\n");
                 os.writeBytes("mv "+PHONE_DIRECTORIES.get(i)+"si "+PHONE_DIRECTORIES.get(i)+"su\n");
                 Log.d("LEGGI", PHONE_DIRECTORIES.get(i));
                 os.writeBytes("exit\n");
