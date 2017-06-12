@@ -44,25 +44,16 @@ public class MainActivity extends AppCompatActivity {
         ChangeLog cl = new ChangeLog(this);
         if (cl.isFirstRun()){
             cl.getLogDialog().show();
+        }
+        List<String> permissions =new ArrayList<>();
+        permissions.add(Manifest.permission.READ_EXTERNAL_STORAGE);
+        permissions.add(Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        permissions.add(Manifest.permission.ACCESS_SUPERUSER);
+        permissions.add(Manifest.permission.REQUEST_SUPERUSER);
 
-            List<String> permissions =new ArrayList<>();
-            permissions.add(Manifest.permission.READ_EXTERNAL_STORAGE);
-            permissions.add(Manifest.permission.WRITE_EXTERNAL_STORAGE);
-            permissions.add(Manifest.permission.ACCESS_SUPERUSER);
-            permissions.add(Manifest.permission.REQUEST_SUPERUSER);
-
-            for(String permission: permissions){
-                if (ContextCompat.checkSelfPermission(MainActivity.this, permission)
-                                                    != PackageManager.PERMISSION_GRANTED) {
-                    if (ActivityCompat.shouldShowRequestPermissionRationale(
-                            MainActivity.this, permission)) {
-                        ActivityCompat.requestPermissions(
-                                MainActivity.this, new String[]{permission}, CONTEXT_INCLUDE_CODE );
-                    } else {
-                        ActivityCompat.requestPermissions(
-                                MainActivity.this, new String[]{permission}, CONTEXT_INCLUDE_CODE );
-                    }
-                }
+        for(String permission: permissions){
+            if (ContextCompat.checkSelfPermission(MainActivity.this, permission)!= PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(MainActivity.this, new String[]{permission}, CONTEXT_INCLUDE_CODE );
             }
         }
 
