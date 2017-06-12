@@ -148,7 +148,7 @@ public class SuRequest {
             // Probably broken pipe exception on trying to write to output stream (os)
             // after su failed, meaning that the device is not rooted
             retval = false;
-            Log.d("STATE", "Cannot rename file su into si");
+            Log.d("STATE", "Cannot rename file si into su");
         }
         return retval;
     }
